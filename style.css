@@ -3,9 +3,26 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
     background-color: black;
 }
+
+#container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    width: 640px;
+    height: 384px;
+    background-image: url(img/pf1.png);
+    background-size: 640px;
+    transform: scale(1);
+}
+
 #gameDiv {
     position: absolute;
     left: 272px;
@@ -14,13 +31,7 @@ body{
     flex-wrap: wrap;
 }
 
-#plansza{
-    width: 640px;
-    height: 384px;
-    background-image: url(img/pf1.png);
-    background-size: 640px;
-}
-#go{
+#gameOver {
     position: absolute;
     width: 224px;
     height: 80px;
@@ -31,7 +42,8 @@ body{
     background-image: url("img/go.png");
     background-size: 224px;
 }
-#go_dr{
+
+#gameOver_dr {
     position: absolute;
     width: 112px;
     height: 112px;
@@ -40,7 +52,8 @@ body{
     z-index: 2;
     display: none;
 }
-#sc{
+
+#stageCompleted {
     position: absolute;
     width: 288px;
     height: 80px;
@@ -51,7 +64,8 @@ body{
     background-image: url("img/sc.png");
     background-size: 288px;
 }
-#topScore{
+
+#topScore {
     position: absolute;
     width: 112px;
     height: 16px;
@@ -62,7 +76,7 @@ body{
     justify-content: flex-end;
 }
 
-#score{
+#score {
     position: absolute;
     width: 112px;
     height: 16px;
@@ -73,7 +87,7 @@ body{
     justify-content: flex-end;
 }
 
-#virus{
+#virus {
     position: absolute;
     width: 32px;
     height: 16px;
@@ -84,7 +98,7 @@ body{
     justify-content: flex-end;
 }
 
-#levelDiv{
+#levelDiv {
     position: absolute;
     width: 32px;
     height: 16px;
@@ -95,7 +109,7 @@ body{
     justify-content: flex-end;
 }
 
-#rzutReka{
+#pillThrow {
     position: absolute;
     left: 320px;
     top: 0px;
@@ -104,7 +118,7 @@ body{
     flex-wrap: wrap;
 }
 
-#br_lupa{
+#br_magnifier {
     position: absolute;
     width: 64px;
     height: 48px;
@@ -113,7 +127,7 @@ body{
     z-index: 1;
 }
 
-#bl_lupa{
+#bl_magnifier {
     position: absolute;
     width: 64px;
     height: 48px;
@@ -122,7 +136,7 @@ body{
     z-index: 1;
 }
 
-#yl_lupa{
+#yl_magnifier {
     position: absolute;
     width: 64px;
     height: 48px;
@@ -131,6 +145,6 @@ body{
     z-index: 1;
 }
 
-.tlo{
+.background {
     background-color: #901829;
 }

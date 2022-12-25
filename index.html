@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Mario</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+
+<body onkeydown="sterowanie(event)" onkeyup="stop(event)">
+    <div id="muz"></div>
+    <div id="plansza" class="tlo">
+        <div id="go" class="tlo"></div>
+        <img id="go_dr" src="img/go_dr.png">
+
+        <div id="sc" class="tlo"></div>
+
+        <div id="score"></div>
+        <div id="topScore"></div>
+        <div id="virus"></div>
+        <div id="levelDiv"></div>
+
+        <div id="rzutReka"></div>
+        <div id="gameDiv"></div>
+
+        <img id="bl_lupa" src="img/lupa/bl/1.png">
+        <img id="br_lupa" src="img/lupa/br/1.png">
+        <img id="yl_lupa" src="img/lupa/yl/1.png">
+    </div>
+    <select name="level" id="level">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+    </select>
+    <button id="stol_wywalony">(ノಠ益ಠ)ノ彡┻━┻</button>
+</body>
+
+</html>
